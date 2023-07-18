@@ -3,82 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chengsi Zhou</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://rawcdn.githack.com/nextapps-de/winbox/0.2.0/dist/css/winbox.min.css"
+    />
   </head>
   <body>
-    <nav class="site-nav grid">
-      <h1>Chengsi Zhou</h1>
-      <ul>
-        <li>Projects</li>
-        <li>skills</li>
-      </ul>
-    </nav>
-    <section id="welcome" class="grid">
-      <div class="welcome-text">
-        <h2>I am a front end developer</h2>
-        <p>
-          Hello, I am Chengsi Zhou. I am currently a third-year student majoring
-          in Computer Science at the University of Alberta. I have a good
-          understanding of HTML, CSS, JavaScript, and have basic knowledge of
-          Git. I am also familiar with React. Right now, I am seeking an
-          internship in the field of front-end development....
-        </p>
+    <div class="container">
+      <nav>
+        <ul>
+          <li id="About">/AboutMe</li>
+          <li id="Contact">/Contact</li>
+          <li id="Projects">/Projects</li>
+        </ul>
+      </nav>
+      <main>
+        <h1>MyName:$<span class="cursor">|</span></h1>
+        <h3>I am a front end developer</h3>
+      </main>
+    </div>
+
+    <div class="hidden">
+      <div id="About-content">
+        <h2>
+          About-me:$<span class="cursor">|</span>
+          <p>
+            Hello, I am Chengsi Zhou. I am currently a third-year student
+            majoring in Computer Science at the University of Alberta. I have a
+            good understanding of HTML, CSS, JavaScript, and have basic
+            knowledge of Git. I am also familiar with React. Right now, I am
+            seeking an internship in the field of front-end development and can
+            start working at anytime....
+          </p>
+        </h2>
       </div>
-      <div class="welcome-img">
-        <img src="https://i.ibb.co/kxPxsrv/trou-noir.png" alt="pic of planet" />
+
+      <div id="Contact-content">
+        <h2>
+          Contact-me:$<span class="cursor">|</span>
+          <p>
+            Hello, I am Chengsi Zhou. I am currently a third-year student
+            majoring in Computer Science at the University of Alberta. I have a
+            good understanding of HTML, CSS, JavaScript, and have basic
+            knowledge of Git. I am also familiar with React. Right now, I am
+            seeking an internship in the field of front-end development and can
+            start working at anytime....
+          </p>
+        </h2>
       </div>
-    </section>
-    <section id="Projects">
-      <h3>Some of projects</h3>
-      <div class="projects grid">
-        <a href="#">
-          <img
-            src="https://i.ibb.co/tZBs4kv/capsule-spatiale.png"
-            alt="space race image"
-          />
-          <h4>JavaScript Game</h4>
-        </a>
-        <a href="#">
-          <img
-            src="https://i.ibb.co/sgWBR6M/saturne.png"
-            alt="planet boy image"
-          />
-          <h4>Javascript Shopping Cart</h4>
-        </a>
-        <a href="#">
-          <img
-            src="https://i.ibb.co/Q80kSPQ/astronaute.png"
-            alt="captain cosmo image"
-          />
-          <h4>React Website</h4>
-        </a>
+
+      <div id="Projects-content">
+        <h2>
+          Projects:$<span class="cursor">|</span>
+          <p>
+            Hello, I am Chengsi Zhou. I am currently a third-year student
+            majoring in Computer Science at the University of Alberta. I have a
+            good understanding of HTML, CSS, JavaScript, and have basic
+            knowledge of Git. I am also familiar with React. Right now, I am
+            seeking an internship in the field of front-end development and can
+            start working at anytime....
+          </p>
+        </h2>
       </div>
-    </section>
-    <section id="skills">
-      <h3>Things I can do</h3>
-      <ul class="grid">
-        <li>
-          <img src="https://i.ibb.co/hXvFQTy/meteor2647400.png" alt="comet" />
-          <h4>JavaScript</h4>
-        </li>
-        <li>
-          <img src="https://i.ibb.co/zJ69DMc/comet2534248.png" alt="comet" />
-          <h4>React</h4>
-        </li>
-        <li>
-          <img src="https://i.ibb.co/0Y20t0c/comet2909923.png" alt="comet" />
-          <h4>HTML</h4>
-        </li>
-        <li>
-          <img src="https://i.ibb.co/c1nBk03/meteor.png" alt="comet" />
-          <h4>CSS</h4>
-        </li>
-        <li>
-          <img src="https://i.ibb.co/c1nBk03/meteor.png" alt="comet" />
-          <h4>Git</h4>
-        </li>
-      </ul>
-    </section>
+    </div>
+    <script src="https://rawcdn.githack.com/nextapps-de/winbox/0.2.0/dist/js/winbox.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
