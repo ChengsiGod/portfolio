@@ -6,6 +6,12 @@ const textElement = document.getElementById("effect");
 const text = "Chengsi Zhou";
 let index = 0;
 
+// Create an object to track open windows
+let openWindows = {
+  about: null,
+  contact: null,
+};
+
 const writeText = () => {
   if (index < text.length) {
     textElement.innerText = text.slice(0, index + 1);
@@ -15,9 +21,10 @@ const writeText = () => {
 };
 
 about.addEventListener("click", () => {
-  const aboutBox = new WinBox({
+  if (openWindows.about) return; // Check if the about window is already open, if yes, return
+
+  openWindows.about = new WinBox({
     title: "About Me",
-    // modal: true,
     width: "400px",
     height: "400px",
     top: 50,
@@ -31,11 +38,16 @@ about.addEventListener("click", () => {
     onblur: function () {
       this.setBackground("#777");
     },
+    onclose: function () {
+      openWindows.about = null; // Clear the about window from the object when it is closed
+    },
   });
 });
 
 contact.addEventListener("click", () => {
-  const contactBox = new WinBox({
+  if (openWindows.contact) return; // Check if the contact window is already open, if yes, return
+
+  openWindows.contact = new WinBox({
     title: "Contact Me",
     width: "400px",
     height: "400px",
@@ -49,6 +61,9 @@ contact.addEventListener("click", () => {
     },
     onblur: function () {
       this.setBackground("#777");
+    },
+    onclose: function () {
+      openWindows.contact = null; // Clear the contact window from the object when it is closed
     },
   });
 });

@@ -74,6 +74,7 @@ a {
 .wb-body {
   background-color: #111;
   padding: 20px;
+  word-wrap: break-word;
 }
 
 p {
