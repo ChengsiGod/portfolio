@@ -66,7 +66,7 @@ contact.addEventListener("click", () => {
     title: "Contact Me",
     width: "400px",
     height: "400px",
-    top: 100,
+    top: 50,
     right: 50,
     bottom: 50,
     left: 150,
@@ -84,9 +84,9 @@ contact.addEventListener("click", () => {
 });
 
 project.addEventListener("click", () => {
-  if (openWindows.about) return; // Check if the about window is already open, if yes, return
+  if (openWindows.project) return; // Check if the about window is already open, if yes, return
 
-  openWindows.about = new WinBox({
+  openWindows.project = new WinBox({
     title: "projects",
     width: "400px",
     height: "400px",
@@ -102,7 +102,7 @@ project.addEventListener("click", () => {
       this.setBackground("#777");
     },
     onclose: function () {
-      openWindows.about = null; // Clear the about window from the object when it is closed
+      openWindows.project = null; // Clear the about window from the object when it is closed
     },
   });
 });
