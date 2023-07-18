@@ -3,69 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://rawcdn.githack.com/nextapps-de/winbox/0.2.0/dist/css/winbox.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
+    <title>protfolio</title>
   </head>
   <body>
     <div class="container">
       <nav>
         <ul>
-          <li id="About">/AboutMe</li>
-          <li id="Contact">/Contact</li>
-          <li id="Projects">/Projects</li>
+          <li id="about">/aboutMe</li>
+          <li id="contact">/contact</li>
+          <li id="projects">/projects</li>
         </ul>
       </nav>
       <main>
-        <h1>MyName:$<span class="cursor">|</span></h1>
+        <h1>MyName:$<span class="cursor">|</span><span id="effect"></span></h1>
         <h3>I am a front end developer</h3>
       </main>
     </div>
-
     <div class="hidden">
-      <div id="About-content">
-        <h2>
-          About-me:$<span class="cursor">|</span>
-          <p>
-            Hello, I am Chengsi Zhou. I am currently a third-year student
-            majoring in Computer Science at the University of Alberta. I have a
-            good understanding of HTML, CSS, JavaScript, and have basic
-            knowledge of Git. I am also familiar with React. Right now, I am
-            seeking an internship in the field of front-end development and can
-            start working at anytime....
-          </p>
-        </h2>
+      <div id="about-content">
+        <h2>about-me:$<span class="cursor">|</span></h2>
+        <p>
+          Hello, I am Chengsi Zhou. I am currently a third-year student majoring
+          in Computer Science at the University of Alberta. I have a good
+          understanding of HTML, CSS, JavaScript, and have basic knowledge of
+          Git. I am also familiar with React. Right now, I am seeking an
+          internship in the field of front-end development....
+        </p>
       </div>
-
-      <div id="Contact-content">
-        <h2>
-          Contact-me:$<span class="cursor">|</span>
-          <p>
-            Hello, I am Chengsi Zhou. I am currently a third-year student
-            majoring in Computer Science at the University of Alberta. I have a
-            good understanding of HTML, CSS, JavaScript, and have basic
-            knowledge of Git. I am also familiar with React. Right now, I am
-            seeking an internship in the field of front-end development and can
-            start working at anytime....
-          </p>
-        </h2>
-      </div>
-
-      <div id="Projects-content">
-        <h2>
-          Projects:$<span class="cursor">|</span>
-          <p>
-            Hello, I am Chengsi Zhou. I am currently a third-year student
-            majoring in Computer Science at the University of Alberta. I have a
-            good understanding of HTML, CSS, JavaScript, and have basic
-            knowledge of Git. I am also familiar with React. Right now, I am
-            seeking an internship in the field of front-end development and can
-            start working at anytime....
-          </p>
-        </h2>
+      <div id="contact-content">
+        <h2>contact-me:$<span class="cursor">|</span></h2>
+        <p>You can contact me at the email and phone number below</p>
+        <ul>
+          <li>Phone: 587-357-9936</li>
+          <li>Email: chengsi@ualberta.ca</li>
+        </ul>
       </div>
     </div>
     <script src="https://rawcdn.githack.com/nextapps-de/winbox/0.2.0/dist/js/winbox.min.js"></script>
